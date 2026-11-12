@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dialect-mesh"
+version = "1.0.0"
+description = "Offline-First Edge Semantic Router & NLU Engine for Low-Resource Languages"
+authors = [
+    { name = "Abenezer (Susan)", email = "contact@satiralabs.com" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["nlp", "low-resource-languages", "amharic", "oromo", "swahili", "edge-ai", "semantic-router"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+dialect-mesh = "dialect_mesh.cli:main"
